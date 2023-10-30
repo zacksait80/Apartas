@@ -1,0 +1,2 @@
+# Apartas
+ALXAMDU LILLAH
