@@ -16,7 +16,7 @@ namespace Apartes.Repositorry
 
         public UserRepository()
         {
-            _connectionString = "DATA SOURCE=DESKTOP-T7U32P7; Initial Catalog=ApartesDB; Integrated Security=True";
+            
 
         }
 
@@ -24,7 +24,7 @@ namespace Apartes.Repositorry
         {
             bool isAuthenticated = false;
 
-            using (SqlConnection connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-T7U32P7;Initial Catalog=Apartes;Integrated Security=True"))
             {
                 //Define Query
                 string query = "SELECT email,password_hash FROM Users WHERE email =@email AND password_hash=@password";
